@@ -1,6 +1,8 @@
+import Auth from "./Auth/Auth.jsx";
+
 const App = () => {
   return (
-    <div>App</div>
+    <Auth />
   );
 };
 
