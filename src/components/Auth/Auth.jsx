@@ -7,7 +7,12 @@ const Auth = () => {
     const [password, setPassword] = useState();
 
     const signIn = async () => {
-        await createUserWithEmailAndPassword(auth, email, password);
+        try {
+            await createUserWithEmailAndPassword(auth, email, password);
+        } catch (error) {
+            console.error(error)
+        }
+        
     };
 
   return (
