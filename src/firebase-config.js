@@ -1,9 +1,11 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth";
+import { getDatabase} from 'firebase/database';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBwXHwqJtd8w5giF30PcHR7k5-9SU5mX44",
   authDomain: "learnlingo-c41dc.firebaseapp.com",
+  databaseURL: "https://learnlingo-c41dc-default-rtdb.europe-west1.firebasedatabase.app/",
   projectId: "learnlingo-c41dc",
   storageBucket: "learnlingo-c41dc.firebasestorage.app",
   messagingSenderId: "547755357731",
@@ -14,3 +16,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
+export const db = getDatabase(app);
