@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="bubbleCircle">
+      <circle cx="32" cy="28" r="26"/>
+    </clipPath>
+  </defs>
+
+  <path d="M32 4a24 24 0 0 1 0 48c-4 0-7 0-10 3l-3 3v-6c-6-4-10-10-10-17A24 24 0 0 1 32 4Z" fill="#ffffff"/>
+
+  <g clip-path="url(#bubbleCircle)">
+    <rect width="64" height="28" y="0" fill="#FFD84D"/>
+    <rect width="64" height="28" y="28" fill="#2676FF"/>
+  </g>
+
+  <circle cx="32" cy="28" r="26" fill="none" stroke="#ffffff" stroke-width="3"/>
+
+  <text
+    x="50%"
+    y="60%"
+    text-anchor="middle"
+    font-size="32"
+    font-family="Inter, Arial, sans-serif"
+    fill="#ffffff"
+    font-weight="700">
+    L
+  </text>
+</svg>
