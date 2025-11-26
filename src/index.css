@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.37;
+  margin: 0;
+  padding: 0;
+  color: #121417;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-size: 18px;
+  line-height: 1.55px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+li {
+  list-style: none;
+}
