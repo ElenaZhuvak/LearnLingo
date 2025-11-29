@@ -1,23 +1,33 @@
-import { NavLink } from 'react-router-dom';
-import Auth from '../Auth/Auth.jsx';
+import { Link, NavLink } from 'react-router-dom';
 import css from './Header.module.css';
+import Logo from '../Logo/Logo.jsx';
 
 const Header = () => {
   return (
-    <header>
-        <NavLink to="/" end>
-        logo
-        </NavLink>
+    <header className={css.header}>
+      <Logo />
+
       <nav className={css.nav}>
-        <NavLink to="/" end>
+        <NavLink className={css.link} to="/" end>
           Home
         </NavLink>
-        <NavLink to="/teachers" end>
+        <NavLink className={css.link} to="/teachers" end>
           Teachers
         </NavLink>
       </nav>
 
-      <Auth />
+      <div className={css.authLinks}>
+        <Link className={css.linkLogin} to="/auth/login">
+          <svg width='20' height='20'>
+            <use href='/src/assets/symbol-defs.svg#icon-log-in'></use>
+          </svg>
+          <p className={css.textLogin}>Log in</p>
+        </Link>
+  
+        <Link className={css.linkLogin}to="/auth/register">
+          <p className={css.textRegister}>Registration</p>
+        </Link>
+      </div>
     </header>
   );
 };
