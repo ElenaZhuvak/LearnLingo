@@ -1,0 +1,49 @@
+.homeContainer {
+    padding: 0 64px;
+    max-height: 100vh;
+}
+.heroPage {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.heroSection {
+    font-family: 'Roboto', sans-serif;
+    padding: 98px 64px;
+    border-radius: 30px;
+    background-color: #F8F8F8;
+    min-width: 720px;
+}
+.heroTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.17;
+    margin-bottom: 32px;
+}
+.highlight {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #FBE9BA;
+    border-radius: 8px;
+}
+.heroDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 64px;
+}
+.heroButton {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.55;
+    background-color: #F4C550;
+    padding: 16px 88px;
+}
+.heroButton:hover {
+    background-color: #FBE9BA;
+}
+.heroImage {
+    display: block;
+}

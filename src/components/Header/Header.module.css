@@ -1,8 +1,8 @@
 .header {
-  margin: 20px 128px;
+  padding: 20px 128px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 100vw;
 }
 
 .nav {

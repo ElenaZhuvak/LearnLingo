@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <Header />
 
-      <Suspense fallback={<div className={css.loader}><BarLoader  /></div>}>
+      <Suspense fallback={<div className={css.loader}><BarLoader /></div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/teachers" element={<TeachersPage />} />
